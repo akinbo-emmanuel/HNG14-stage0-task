@@ -39,4 +39,4 @@ Open `http://localhost:5500`.
 ## Submission Links
 
 - Live URL: _add deployed link here_
-- GitHub Repository: _add repository link here_
+- GitHub Repository: https://github.com/akinbo-emmanuel/HNG14-stage0-task
