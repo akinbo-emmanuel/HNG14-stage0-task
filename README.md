@@ -38,5 +38,5 @@ Open `http://localhost:5500`.
 
 ## Submission Links
 
-- Live URL: _add deployed link here_
+- Live URL: https://hng14-stage0.vercel.app/
 - GitHub Repository: https://github.com/akinbo-emmanuel/HNG14-stage0-task
