@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stage 0 - Testable Todo Card</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <article class="todo-card" data-testid="test-todo-card" aria-label="Todo item card">
+        <header class="todo-card__header">
+          <h2 class="todo-card__title" data-testid="test-todo-title">Prepare Product Design Review</h2>
+          <span
+            class="badge badge--priority"
+            data-testid="test-todo-priority"
+            aria-label="Task priority High"
+          >
+            High
+          </span>
+        </header>
+
+        <p class="todo-card__description" data-testid="test-todo-description">
+          Finalize the presentation deck, align component states, and share notes with the product and
+          engineering teams before the review session.
+        </p>
+
+        <div class="todo-card__meta">
+          <time class="todo-card__due-date" data-testid="test-todo-due-date"></time>
+          <time class="todo-card__time-remaining" data-testid="test-todo-time-remaining"></time>
+        </div>
+
+        <div class="todo-card__status-row">
+          <span class="badge badge--status" data-testid="test-todo-status" aria-label="Task status In Progress">
+            In Progress
+          </span>
+          <div class="todo-card__toggle">
+            <input
+              id="todo-complete-toggle"
+              type="checkbox"
+              data-testid="test-todo-complete-toggle"
+              aria-label="Mark task as complete"
+            />
+            <label for="todo-complete-toggle">Mark complete</label>
+          </div>
+        </div>
+
+        <ul class="todo-card__tags" role="list" data-testid="test-todo-tags" aria-label="Task categories">
+          <li class="tag" data-testid="test-todo-tag-work">work</li>
+          <li class="tag" data-testid="test-todo-tag-urgent">urgent</li>
+          <li class="tag">design</li>
+        </ul>
+
+        <div class="todo-card__actions">
+          <button type="button" data-testid="test-todo-edit-button" aria-label="Edit task">
+            Edit
+          </button>
+          <button type="button" data-testid="test-todo-delete-button" aria-label="Delete task">
+            Delete
+          </button>
+        </div>
+      </article>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
